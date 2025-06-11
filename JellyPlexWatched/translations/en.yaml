@@ -1,0 +1,25 @@
+configuration:
+  DRYRUN:
+    name: Dry Run
+    description: Log the changes rather than action them
+  DEBUG:
+    name: Debug
+    description: Additional logging information
+  DEBUG_LEVEL:
+    name: Debug Level
+    description: Debugging level, "info" is default, "debug" is more verbose
+  SLEEP_DURATION:
+    name: Sleep Duration
+    description: How often to run the script in seconds
+  GENERATE_GUIDS:
+    name: Generate Guids
+    description: Generating guids is a slow process, so this is a way to speed up the process by using the location only, useful when using same files on multiple servers
+  GENERATE_LOCATIONS:
+    name: Generate Locations
+    description: Generating locations is a slow process, so this is a way to speed up the process by using the guid only, useful when using different files on multiple servers
+  USER_MAPPING:
+    name: User Mapping
+    description: Map usernames between servers in the event that they are different, order does not matter. Json string.
+  LIBRARY_MAPPING:
+    name: Library Mapping
+    description: Map libraries between servers in the event that they are different, order does not matter. Json string.
