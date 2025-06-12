@@ -5,7 +5,6 @@ slug: jellyplexwatched
 description: JellyPlex-Watched add-on
 url: "https://github.com/georgeduckett/JellyPlexWatchedHA/tree/main/JellyPlexWatched"
 arch:
-  - arm64
   - amd64
 init: false
 image: "luigi311/jellyplex-watched"
