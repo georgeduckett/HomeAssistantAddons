@@ -11,12 +11,51 @@ configuration:
   SLEEP_DURATION:
     name: Sleep Duration
     description: How often to run the script in seconds
+  REQUEST_TIMEOUT:
+    name: Request Timeout
+    description: Timeout for requests for jellyfin
   GENERATE_GUIDS:
     name: Generate Guids
     description: Generating guids is a slow process, so this is a way to speed up the process by using the location only, useful when using same files on multiple servers
   GENERATE_LOCATIONS:
     name: Generate Locations
     description: Generating locations is a slow process, so this is a way to speed up the process by using the guid only, useful when using different files on multiple servers
+  BLACKLIST_LIBRARY:
+    name: Blacklist Library
+    description: Comma separated list of libraries to ignore, order does not matter. Mappings apply.
+  WHITELIST_LIBRARY:
+    name: Whitelist Library
+    description: Comma separated list of libraries to include, order does not matter. Mappings apply.
+  BLACKLIST_LIBRARY_TYPE:
+    name: Blacklist Library Type
+    description: Comma separated list of library types to ignore, order does not matter. Mappings apply.
+  WHITELIST_LIBRARY_TYPE:
+    name: Whitelist Library Type
+    description: Comma separated list of library types to include, order does not matter. Mappings apply.
+  BLACKLIST_USERS:
+    name: Blacklist Users
+    description: Comma separated list of users to ignore, order does not matter. Mappings apply.
+  WHITELIST_USERS:
+    name: Whitelist Users
+    description: Comma separated list of users to include, order does not matter. Mappings apply.
+  PLEX_BASEURL:
+    name: Plex Base URL
+    description: URL of the plex server, use hostname or IP address if the hostname is not resolving correctly, comma separated list of URLs if you have multiple servers.
+  PLEX_TOKEN:
+    name: Plex Token
+    description: Plex token https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
+  JELLYFIN_BASEURL:
+    name: Jellyfin Base URL
+    description: URL of the Jellyfin server, use hostname or IP address if the hostname is not resolving correctly, comma separated list of URLs if you have multiple servers.
+  JELLYFIN_TOKEN:
+    name: Jellyfin Token
+    description: Jellyfin api token, created manually by logging in to the jellyfin server admin dashboard and creating an api key
+  EMBY_BASEURL:
+    name: Emby Base URL
+    description: URL of the Emby server, use hostname or IP address if the hostname is not resolving correctly, comma separated list of URLs if you have multiple servers.
+  EMBY_TOKEN:
+    name: Emby Token
+    description: Emby api token, created manually by logging in to the Emby server admin dashboard and creating an api key
   USER_MAPPING:
     name: User Mapping
     description: Map usernames between servers in the event that they are different, order does not matter. Json string.

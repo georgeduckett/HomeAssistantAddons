@@ -3,7 +3,7 @@ name: Jellyplex Watched
 version: "sha-ef74802-slim"
 slug: jellyplexwatched
 description: JellyPlex-Watched add-on
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/georgeduckett/JellyPlexWatchedHA/tree/main/JellyPlexWatched"
 arch:
   - armhf
   - armv7
@@ -11,31 +11,36 @@ arch:
   - amd64
   - i386
 init: false
+image: "luigi311/jellyplex-watched"
+legacy: True
 options:
   DRYRUN: true
   DEBUG: false
   DEBUG_LEVEL: info
   SLEEP_DURATION: 3600
+  REQUEST_TIMEOUT: 300
   GENERATE_GUIDS: false
   GENERATE_LOCATIONS: true
-  PLEX_BASEURL: null
-  PLEX_TOKEN: null
-  JELLYFIN_BASEURL: null
-  JELLYFIN_TOKEN: null
-  USER_MAPPING: '{ "TomMiller": "tmiller7188" }'
   LIBRARY_MAPPING: '{ "Films": "Movies", "Shows": "TV Shows" }'
 schema:
   DRYRUN: bool
   DEBUG: bool
   DEBUG_LEVEL: "list(info|debug)"
   SLEEP_DURATION: int(60,)
+  REQUEST_TIMEOUT: int(0,)
   GENERATE_GUIDS: bool
   GENERATE_LOCATIONS: bool
+  BLACKLIST_LIBRARY: str?
+  WHITELIST_LIBRARY: str?
+  BLACKLIST_LIBRARY_TYPE: str?
+  WHITELIST_LIBRARY_TYPE: str?
+  BLACKLIST_USERS: str?
+  WHITELIST_USERS: str?
   PLEX_BASEURL: url?
   PLEX_TOKEN: str?
   JELLYFIN_BASEURL: url?
   JELLYFIN_TOKEN: str?
+  EMBY_BASEURL: url?
+  EMBY_TOKEN: str?
   USER_MAPPING: str?
   LIBRARY_MAPPING: str?
-image: "luigi311/jellyplex-watched"
-legacy: True

@@ -6,9 +6,9 @@ build_from:
   armv7: "luigi311/jellyplex-watched"
   i386: "luigi311/jellyplex-watched"
 labels:
-  org.opencontainers.image.title: "Home Assistant Add-on: Example add-on"
-  org.opencontainers.image.description: "Example add-on to use as a blueprint for new add-ons."
-  org.opencontainers.image.source: "https://github.com/home-assistant/addons-example"
+  org.opencontainers.image.title: "Home Assistant Add-on: JellyPlex Watched"
+  org.opencontainers.image.description: "A Home Assistant version of JellyPlex Watched."
+  org.opencontainers.image.source: "https://github.com/georgeduckett/HomeAssistantAddons"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
   TEMPIO_VERSION: "2021.09.0"
