@@ -10,6 +10,8 @@ init: false
 image: "luigi311/jellyplex-watched"
 legacy: True
 options:
+  PUID: 0
+  PGID: 0
   DRYRUN: true
   DEBUG: false
   DEBUG_LEVEL: info
@@ -19,6 +21,8 @@ options:
   GENERATE_LOCATIONS: true
   LIBRARY_MAPPING: '{ "Films": "Movies", "Shows": "TV Shows" }'
 schema:
+  PUID: int(0,)
+  PGID: int(0,)
   DRYRUN: bool
   DEBUG: bool
   DEBUG_LEVEL: "list(info|debug)"
